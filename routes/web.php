@@ -25,6 +25,6 @@ Route::get('/contact',function(){
     return view('contact');
 });
 
-Route::get('/catering',function(){
-    return view('catering');
-});
+#Route::get('/catering',function(){
+#    return view('catering');
+#});
