@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Site Metas -->
+        <title>Kilo Biryani</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+
+        <!-- Site Icons -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+        <!-- Site CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/superslides.css') }}" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+
+    </head>
+    <style>
+        #logo {
+            position: relative;
+            animation-name: example;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes example {
+            0% {
+                left: 250%;
+                transform: rotate(5deg);
+            }
+            50% {
+                left: 0;
+                transform: rotate(-10deg);
+            }
+            75% {
+                left: 0;
+                transform: rotate(10deg);
+            }
+            100% {
+                left: 0;
+            }
+        }
+    </style>
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navoneplace" href="{{ url('/') }}">
+                    <span class="navoneplace"><img src="{{asset('/images/logo.jpeg')}}" id="logo" style="height:80px" alt="" /></span><span class="navoneplace navtext">KILO BIRIYANI</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation" href=#>
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+                <div class="collapse navbar-collapse" id="navbars-rs-food">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/menu') }}">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/catering') }}">Catering</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact</a></li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+
+
+    @yield('content')
+
+    {{-- {% block content %} {% endblock %} --}}
+
+    <!-- Start Contact info -->
+    <div class="contact-imfo-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <i class="fa fa-volume-control-phone"></i>
+                    <div class="overflow-hidden">
+                        <h4>Phone</h4>
+                        <p class="lead">
+                            0761355454
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <i class="fa fa-envelope"></i>
+                    <div class="overflow-hidden">
+                        <h4>Email</h4>
+                        <p class="lead">
+                            infokiloburiyani@gmail.com </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-map-marker"></i>
+                    <div class="overflow-hidden">
+                        <h4>Location</h4>
+                        <p class="lead">
+                            Gama Meda Rd, Ja-Ela 11350
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact info -->
+
+    <!-- Start Footer -->
+    <footer class="footer-area bg-f">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h3>About Us</h3>
+                    <p>Home-based Authentic Food Restaurant. The Traditional Biriyani Ever.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <!-- <h3>Subscribe</h3>
+					<div class="subscribe_form">
+						<form class="subscribe_form">
+							<input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+							<button type="submit" class="submit">SUBSCRIBE</button>
+							<div class="clearfix"></div>
+						</form>
+					</div> -->
+                    <ul class="list-inline f-social">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/Kilo-Biriyani-102122514691351/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/kilobiriyani_lk/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Contact information</h3>
+                    <p class="lead">Gama Meda Rd, Ja-Ela 11350</p>
+                    <p class="lead"><a href="#">0113420430</a></p>
+                    <p class="lead"><a href="#">0761355454</a></p>
+                    <p><a href="#"> infokiloburiyani@gmail.com</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Opening hours</h3>
+                    <p><span class="text-color">Sunday: </span>09:00 AM - 01:00 AM </p>
+                    <p><span class="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
+                    <p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
+                    <p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/popper.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.superslides.min.js') }}"></script>
+    <script src="{{ asset('js/isotope.min.js') }}"></script>
+    <script src="{{ asset('js/baguetteBox.min.js') }}"></script>
+    <script src="{{ asset('js/form-validator.min.js') }}"></script>
+    <script src="{{ asset('js/contact-form-script.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
+    <script src="{{ asset('js/confetti.min.js') }}"></script>
+    <script src="{{ asset('js/images-loded.min.js') }}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+
+    </body>
+</html>

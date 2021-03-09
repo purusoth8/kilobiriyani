@@ -1,0 +1,117 @@
+@extends('layouts.base')
+
+@section('content')
+
+<div style="height: 50px;"></div>
+<div class="all-page-title page-breadcrumb4">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>ABOUT US</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background-color: rgb(0, 0, 0);">
+    <div>
+        <img class="m-sm-5 m-1 content-section" src="{{asset('/images/1.jpeg')}}" style="width: 80vw;left: 5vw;position: relative;" alt="">
+        <h1 style="text-align: center;font-weight: 600;font-size: 2em;color: aliceblue;">ABOUT KILO BIRIYANI</h1>
+    </div>
+
+    <div>
+        <h4 class="content-section" style="font-weight: 700;width: 80vw;left: 10vw;position: relative;text-align: center;color: aliceblue;">In a world where "authentic biryani" is used more as a phrase rather than served as a dish, we at Kilo Biryani have made it our goal to serve truly authentic, Hyderabadi Biryani to those who know the taste that goes with that promise. Using the
+            finest ingredients, our chefs cook a vast array of Thalapakatti, Kottu, Kuruma and Curries, which are specially chosen to complement our world class Biryani selection. All of this is also available together in the form of Combos and Super
+            Saver packs aimed at making the experience of dining with family and friends all the more enjoyable. Amazing Biryani, the best accompanying dishes and good times with family and friends, in short: A Biryani lover's paradise.</h4>
+    </div>
+
+</div>
+
+
+<div class="all-page-title page-breadcrumb">
+    <div class="container text-center" style="height: 5em;">
+        <div class="row">
+            <h1 data-aos="flip-up"></h1>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div>
+        <img class="m-sm-5 m-1 content-section" src="{{asset('/images/main-qimg.jpeg')}}" style="width: 80vw;left: 5vw;position: relative;" alt="">
+        <h1 style="text-align: center;font-weight: 600;font-size: 2em">THE AANCH</h1>
+    </div>
+
+    <div>
+        <h4 class="content-section" style="font-weight: 700;width: 80vw;left: 10vw;position: relative;text-align: center;">A sure shot attention grabber at every gathering. Our mini Angeethis provide those extra 8-10 minutes of dum to your Biryani right before serving and it gives the perfect smoky flavour and aroma of spices when you dig in to your Biryani.</h4>
+    </div>
+</div>
+
+
+<div class="all-page-title page-breadcrumb">
+    <div class="container text-center" style="height: 5em;">
+        <div class="row">
+            <h1 data-aos="flip-up"></h1>
+        </div>
+    </div>
+</div>
+
+<div style="background-color: rgb(0, 0, 0);">
+    <div>
+        <img class="m-sm-5 m-1 content-section" src="{{asset('/images/merchant_profile__hero__image_s.jpeg')}}" style="width: 80vw;left: 5vw;position: relative;" alt="">
+        <h1 style="text-align: center;font-weight: 600;font-size: 2em;color: aliceblue;">THE BIRYANI</h1>
+    </div>
+
+    <div>
+        <h4 class="content-section" style="font-weight: 700;width: 80vw;left: 10vw;position: relative;text-align: center;color: aliceblue;">Kilo Biryani is prepared in an earthen pot called Handi, the rice and meat are layered, bottom and top layer are always rice. An interlayer of some condiments is introduced between the meat and the rice. Hyderabadi Biryani is the kachay gosht
+            ki Biryani or the dum Biryani, where the meat is marinated and cooked along with the rice. It is left on slow fire or dum for a fragrant and aromatic flavour. Lucknowni or Awadhi Biryani is a pakki Biryani. The rice and meat are generally
+            partially cooked separately in spiced water, then layered and cooked by the dum pukht method. Kolkata Biryani is much lighter on spices and uses potato & egg to enhance its flavour. It is a sub variant of Lucknowi style of Biryani. Kilo Biriyani
+            uses one of the most expensive branded rice, stringently selected meat pieces and vegetables, Kerala carefully sourced spices, authentic age old recipes to make its Biryani. On top of it, Kilo Biryani is cooked individually & fresh in the
+            same Handi as it is served to you.</h4>
+    </div>
+</div>
+
+<div class="all-page-title page-breadcrumb">
+    <div class="container text-center" style="height: 5em;">
+        <div class="row">
+            <h1 data-aos="flip-up"></h1>
+        </div>
+    </div>
+</div>
+
+<div style="background-color: aliceblue;">
+    <div>
+        <img class="m-sm-5 m-1 content-section" src="{{asset('/images/Srilankan_Chicken_Curry_400.jpeg')}}" style="width: 80vw;left: 5vw;position: relative;" alt="">
+        <h1 style="text-align: center;font-weight: 600;font-size: 2em">THE KORMA</h1>
+    </div>
+
+    <div>
+        <h4 class="content-section" style="font-weight: 700;width: 80vw;left: 10vw;position: relative;text-align: center;">Korma is a noble dish that once graced the banquet tables of the imperial Mughal court, rich with cream and nuts and heavily scented with expensive spice, has become one of the most loved dishes in the world. At Kilo Biriyani, The Korma is made
+            by marinating the main ingredients in yoghurt, cashew paste and fresh ground spices to produce a mouth-watering thick sauce or glaze. We believe that Kilo serves the best mutton, chicken & veg kormas in the country.</h4>
+    </div>
+</div>
+
+
+<div class="all-page-title page-breadcrumb">
+    <div class="container text-center" style="height: 5em;">
+        <div class="row">
+            <h1 data-aos="flip-up"> </h1>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div>
+        <img class="m-sm-5 m-1 content-section" src="{{asset('/images/responsible growth.png')}}" style="width: 80vw;left: 5vw;position: relative;" alt="">
+        <h1 style="text-align: center;font-weight: 600;font-size: 2em">We believe in working together</h1>
+    </div>
+
+    <div>
+        <h4 class="content-section" style="font-weight: 700;width: 80vw;left: 10vw;position: relative;text-align: center;">At Kilo Biriyani we strive towards inclusive growth & environment friendly approach. We work closely with potters at Kumhaara Gram on the outskirts of Colombo to develop our hand made pots/handi's for our biryanis. We cut across the middlemen
+            and ensure that the potters get their due share of the efforts. Also Kilo Biryanis are cooked in the same Handi's in which they are delivered, ensuring best freshness & hygiene. Kilo Biriyani Handi's are reusable for cooking or putting plants,
+            painting etc. All this brings back to our roots & sustainable development. Let us all work toward better ecosystem by being more conscious towards our environment & people. Kilo Biriyani Pot provide lot of health aspect while we cooked and
+            you eat. Better health for better life tomorrow.</h4>
+    </div>
+</div>
+
+
+@endsection

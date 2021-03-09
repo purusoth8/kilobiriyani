@@ -1,0 +1,113 @@
+@extends('layouts.base')
+
+@section('content')
+
+<div style="height: 100px;"></div>
+
+<!-- Start All Pages -->
+<div class="all-page-title page-breadcrumb">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Customized Catering</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Pages -->
+<!-- Start Reservation -->
+<div class="reservation-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading-title text-center">
+                    <h2>We design every menu to fit you
+                    </h2>
+                    <p>Hey There! Planning a party - Kilo Biriyani loves being a part of your celebrations and this time is no different, with Biryani we can add a little bit warmth and a whole lot of love to your celebrations. We've got you covered with
+                        a wide variety of Biryani's to indulge in! Gatherings, Pre Wedding, Corporate & media events. Variety of Biryani. Fill in your information here or give us a call at 0113420430 for special discounts and offer.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="contact-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <form method="GET">
+                                        <label for="date" style="width: 21%;">Date</label>
+                                        <input type="date" id="date" name="date" style="width: 75%;" required data-error="Please select Date">
+                                        <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <select name="per" class="custom-select d-block form-control" id="person" required data-error="Please select Option">
+											  <option disabled selected>--choose and option--</option>
+											  <option value="Birthday Party">Birthday Party</option>
+											  <option value="Kitty Party">Kitty Party</option>
+											  <option value="Family Celebration">Family Celebration</option>
+											  <option value="Corporate Event">Corporate Event</option>
+											  <option value="Others">Others</option>
+											</select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Address 1" id="address" class="form-control" name="address1" required data-error="Please enter your Address">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Address 2" id="address" class="form-control" name="address2">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="time" style="width: 21%;">Time</label>
+                                    <input type="time" id="time" name="time" style="width: 75%;" required data-error="Please select Time">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Numbar" id="phone" class="form-control" name="phone" required data-error="Please enter your Numbar">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="submit-button text-center">
+                                <input onclick="myFunction()" class="btn btn-common" id="submit" type="submit" value="Submit">
+                                </form>
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@endsection
